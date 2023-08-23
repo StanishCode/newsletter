@@ -25,16 +25,20 @@ body {
 
 .container {
   background-color: var(--color-white);
-  max-width: 60rem;
-  margin: 3rem auto;
+  max-width: 85rem;
+  margin: 10rem auto;
   padding: 2rem;
-  border-radius: 12px; }
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2rem; }
 
 .content {
   padding: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  flex-basis: 50%; }
   .content__description {
-    margin-bottom: 2.5rem; }
+    margin-bottom: 3rem; }
 
 .heading-main {
   font-size: 4rem;
@@ -93,9 +97,13 @@ body {
 .btn {
   background-color: var(--color-secondary);
   color: var(--color-white);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 700;
   width: 100%;
   border: none;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.4rem;
   border-radius: 5px; }
+
+.signup-illustration__image {
+  width: 100%;
+  object-fit: center; }
