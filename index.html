@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <div class="backdrop closed"></div>
+    <div class="modal closed">
+      <img src="assets/images/icon-success.svg" alt="" />
+      <h2 class="heading-secondary">Thanks for subscribing!</h2>
+      <p class="modal__text">
+        A confirmation email has been sent to <span>email@email.com</span>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button class="modal__button btn">Dismiss message</button>
+    </div>
+
     <main class="container">
       <div class="content">
         <div class="content__description">
@@ -38,6 +49,7 @@
               class="form__control-email"
               id="email"
               placeholder="email@company.com"
+              required
             />
           </div>
           <button class="btn">Subscribe to monthly newsletter</button>
@@ -51,5 +63,6 @@
         />
       </div>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
