@@ -1,0 +1,41 @@
+:root {
+  --color-primary: hsl(4, 100%, 67%);
+  --color-secondary: hsl(234, 29%, 20%);
+  --color-grey-dark: hsl(235, 18%, 26%);
+  --color-grey-light-1: hsl(231, 7%, 60%);
+  --color-grey-light-2: hsl(231, 7%, 80%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 46.875em) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: 26.5625em) {
+    font-size: 30%;
+  }
+}
+
+body {
+  background-color: var(--color-grey-dark);
+  font-family: "Roboto", sans-serif;
+}
