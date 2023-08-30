@@ -29,15 +29,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./newsletter-destop.png)
-![](./newsletter-mobile.png)
-![](./newsletter-success.png)
-![](./newsletter-error.png)
+![](./solution/newsletter-desktop.png)
+![](./solution/newsletter-mobile.png)
+![](./solution/newsletter-success.png)
+![](./solution/newsletter-error.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/StanishCode/newsletter)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://stanishcode.github.io/newsletter/)
 
 ## My process
 
