@@ -1,5 +1,6 @@
 const backdrop = document.querySelector(".backdrop");
 const modal = document.querySelector(".modal");
+const subscriber = document.querySelector(".modal__text span");
 const description = document.querySelector(".content__description");
 const illustration = document.querySelector(".signup-illustration");
 const modalButton = document.querySelector(".modal__button");
@@ -20,9 +21,12 @@ form.addEventListener("submit", (event) => {
   if (email.value.trim().length === 0 || !email.value.includes("@")) {
     email.classList.remove("invalid");
     email.classList.add("invalid");
+
     if (!document.querySelector(".label-container p")) {
       label.insertAdjacentHTML("afterend", "<p>Valid email required</p>");
     }
+    email.value = "";
+
     return;
   }
 
@@ -30,7 +34,9 @@ form.addEventListener("submit", (event) => {
     document.querySelector(".label-container p").remove();
     email.classList.remove("invalid");
   }
+  const subscriberEmail = email.value;
   email.value = "";
+  subscriber.innerHTML = subscriberEmail;
 
   description.classList.toggle("closed");
   illustration.classList.toggle("closed");
